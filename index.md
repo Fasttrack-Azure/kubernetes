@@ -14,6 +14,8 @@ These are hands-on resources to help you learn Kubernetes.
 - _Optional_
     - Install [Visual Studio Code](https://code.visualstudio.com) (free - Windows, macOS and Linux) to browse the repo and documentation
 
+# Day 1
+
 ## Core Kubernetes
 
 - [Nodes](labs/nodes/README.md)
@@ -27,6 +29,8 @@ These are hands-on resources to help you learn Kubernetes.
 - [Secrets](labs/secrets/README.md)
 - [PersistentVolumes](labs/persistentvolumes/README.md)
 - [Namespaces](labs/namespaces/README.md)
+
+# Day 2
 
 ## Advanced Application Modelling
 
@@ -42,9 +46,20 @@ These are hands-on resources to help you learn Kubernetes.
 - [Monitoring](labs/monitoring/README.md)
 - [Logging](labs/logging/README.md)
 
+# Day 3
+
+## Continuous Integration and Continuous Deployment (CI/CD)
+
+- [Image optimizing](labs/docker/README.md)
+- [BuildKit](labs/buildkit/README.md)
+- [Helm](labs/helm/README.md)
+- [Rollouts](labs/rollouts/README.md)
+
 ## Kubernetes and Azure
 - [Deploying to AKS with ACR](https://github.com/Developing-Scalable-Apps-using-Azure/Core-Kubernetes)
 - [Integration with Azure Storage and Azure Key Vault](https://github.com/Fasttrack-Azure/Working-with-Azure-Storage-and-AKV)
+
+# Day 4
 
 ## Real Kubernetes
 
