@@ -2,4 +2,4 @@
 
 Labs and exercises to help you learn Kubernetes.
 
-Live at https://kubernetes.courselabs.co.
+Live at fasttrack-azure.github.io/kubernetes/
