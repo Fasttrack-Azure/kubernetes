@@ -42,32 +42,12 @@ These are hands-on resources to help you learn Kubernetes.
 - [Monitoring](labs/monitoring/README.md)
 - [Logging](labs/logging/README.md)
 
-## Continuous Integration and Continuous Deployment (CI/CD)
-
-- [Image optimizing](labs/docker/README.md)
-- [BuildKit](labs/buildkit/README.md)
-- [Helm](labs/helm/README.md)
-- [Rollouts](labs/rollouts/README.md)
-- [Jenkins](labs/jenkins/README.md)
-- [ArgoCD](labs/argo/README.md)
-
-## Advanced Kubernetes
-
-- [NetworkPolicy](labs/networkpolicy/README.md)
-- [Admission](labs/admission/README.md)
-- [Operators](labs/operators/README.md)
-
-## Production Operations
-
-- [Clusters](labs/clusters/README.md)
-- [Affinity](labs/affinity/README.md)
-- [Tools](labs/tools/README.md)
+## Kubernetes and Azure
+- [Deploying to AKS with ACR](https://github.com/Developing-Scalable-Apps-using-Azure/Core-Kubernetes)
+- [Integration with Azure Storage and Azure Key Vault](https://github.com/Fasttrack-Azure/Working-with-Azure-Storage-and-AKV)
 
 ## Real Kubernetes
 
 - [Troubleshooting](labs/troubleshooting/README.md)
 - [Hackathon!](hackathon/README.md)
 
-### Credits
-
-Created by [@EltonStoneman](https://twitter.com/EltonStoneman) ([sixeyed](https://github.com/sixeyed)): Freelance Consultant and Trainer. Author of [Learn Docker in a Month of Lunches](https://www.manning.com/books/learn-docker-in-a-month-of-lunches), [Learn Kubernetes in a Month of Lunches](https://www.manning.com/books/learn-kubernetes-in-a-month-of-lunches) and [many Pluralsight courses](https://pluralsight.pxf.io/c/1197078/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fauthors%2Felton-stoneman).
