@@ -48,7 +48,7 @@ These are hands-on resources to help you learn Kubernetes.
 
 # Day 3
 
-## Continuous Integration and Continuous Deployment (CI/CD)
+## Manage and Optimizing Deployments
 
 - [Image optimizing](labs/docker/README.md)
 - [BuildKit](labs/buildkit/README.md)
