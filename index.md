@@ -34,7 +34,6 @@ These are hands-on resources to help you learn Kubernetes.
 
 ## Advanced Application Modelling
 
-- [Role-based Access Control (RBAC)](labs/rbac/README.md)
 - [DaemonSets](labs/daemonsets/README.md)
 - [Ingress](labs/ingress/README.md)
 - [Jobs and CronJobs](labs/jobs/README.md)
