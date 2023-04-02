@@ -16,6 +16,21 @@ These are hands-on resources to help you learn Kubernetes.
 
 # Day 1
 
+## Containerized Applications
+
+- [Running containers](labs/containers/README.md)
+- [Constructing the container environment](labs/env/README.md)
+
+## Distributed Container Apps
+
+- [Docker Compose](labs/compose/README.md)
+- [Modelling apps with Compose](labs/compose-model/README.md)
+
+## Real-World Containers
+  
+- [Troubleshooting](troubleshooting/docker/README.md)
+- [Sock Shop on Compose](sockshop/docker/README.md) 
+
 ## Core Kubernetes
 
 - [Nodes](labs/nodes/README.md)

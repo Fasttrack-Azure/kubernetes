@@ -141,6 +141,15 @@ kubectl get all -n logging
 
 Elasticsearch uses a REST API on port 9200 to insert & query data. We can use it from the jumpbox Pod.
 
+We'll use curl to make HTTP requests - if you're using Windows, run this script to use the correct curl version:
+
+```
+# only for Windows - enable scripts:
+
+# then run:
+. ./scripts/windows-tools.ps1
+```
+
 Generate some application logs by making a call to the fulfilment REST API:
 
 ```
