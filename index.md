@@ -38,6 +38,8 @@ These are hands-on resources to help you learn Kubernetes.
 - [Services](labs/services/README.md)
 - [Deployments](labs/deployments/README.md)
 
+# Day 2
+
 ## Application Modelling
 
 - [ConfigMaps](labs/configmaps/README.md)
@@ -45,7 +47,6 @@ These are hands-on resources to help you learn Kubernetes.
 - [PersistentVolumes](labs/persistentvolumes/README.md)
 - [Namespaces](labs/namespaces/README.md)
 
-# Day 2
 
 ## Advanced Application Modelling
 
