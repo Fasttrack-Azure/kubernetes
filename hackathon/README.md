@@ -295,63 +295,6 @@ kubectl get svc -A -l kubernetes.courselabs.co=hackathon
 
 </details><br/>
 
-## Part 7 - CI/CD
-
-The last thing we need is a full CI/CD pipeline to build from source code and deploy to a test environment.
-
-We've settled on Helm for packaging, so the first task is to work up the YAML specs into a Helm chart. The chart should support:
-
-- multiple release in the same namespace
-- variables for image tags, replica counts, and whether resource limits should be included
-- app configuration per release, including the database password and the web theme
-
-> We'll be using standard deployments for the ingress controller, monitoring and logging stacks so you don't need to build Helm charts for those
-
-Deploy a second instance of the Widgetario app in your cluster using Helm, with the values file [hackathon/files/helm/uat.yaml](./files/helm/uat.yaml). Confirm you can access it on a different port from the original, and all the Pods are talking to the right components.
-
-Then we need to put together the continuous integration pipeline:
-
-- we'll use Jenkins, BuildKit and Gogs to power the pipeline
-- you'll need to create a registry Secret to push to Docker Hub (or your own registry)
-- the source code is all in the `/hackathon/project` folder, which is where you'll find the [Jenkinsfile](./project/Jenkinsfile) with the build steps already in it
-
-You should be able to add your local Gogs server as a new Git remote and push this repository to it. Then your Jenkins build should build images for the database, APIs and web server and push them all to your container registry, with a version number in the tag.
-
-So then we're ready to add continuous deployment:
-
-- extend the Jenkinsfile to add the deployment steps
-- use the Helm chart for deploying to a test namespace
-- deploy the chart with the values file [hackathon/files/helm/smoke-test.yaml](./files/helm/smoke-test.yaml)
-- the deployment needs to use the latest images which were pushed in the build.
-
-Now when you trigger the build from Jenkins you should see a new version of the app deployed in your test namespace, running all the latest image versions.
-
-<details>
-  <summary>Hints</summary>
-
-If you've got this far, you probably don't need any hints :) The infrastructure stack we want to run is the same one we used in an earlier lab, so you can use those specs as the basis.
-
-The default Jenkins setup from that lab creates a project which points to a different Jenkinsfile - you'll need to edit the path in the job.
-
-You may be running low on resources, so you can scale down the existing deployment:
-
-```
-kubectl scale deploy/products-api deploy/stock-api deploy/web sts/products-db --replicas 0
-```
-
-And remember the registry secret needs to contain your own credentials, and the image name you build needs to use a repository which you have permission to push to.
-
-</details><br />
-
-<details>
-  <summary>Solution</summary>
-
-If you didn't get part 7 finished, you can check out the specs in the sample solution from `hackathon/solution-part-7`. There's a `helm` folder with the chart, and an `infrastructure` folder with the CI/CD setup.
-
-There are some more details for setting up and running the pipeline in the [part 7 solution doc](./solution-part-7/README.md).
-
-___ 
-
 ## Cleanup
 
 Uninstall your Helm charts, e.g:

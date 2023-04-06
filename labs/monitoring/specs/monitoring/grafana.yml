@@ -8,7 +8,7 @@ spec:
     app: grafana
   ports:
     - name: grafana
-      port: 3000
+      port: 4000
       targetPort: grafana
   type: LoadBalancer
 ---
