@@ -22,7 +22,7 @@ spec:
   ports:
     - port: 8090
       targetPort: http
-      nodePort: 30018
+      nodePort: 30019
   selector:
     app: vweb
   type: NodePort
